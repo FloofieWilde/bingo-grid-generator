@@ -15,6 +15,12 @@ const TextInput = ({val, setter}) => {
       <input className='text-input'
         type="text"
         value={Text}
+        onKeyDown={
+          (e) => {
+            if (e.keyCode === 13) {
+              addText();
+            }
+          }}
         onChange={(e) => {
           setText(e.target.value);
         }}/>
