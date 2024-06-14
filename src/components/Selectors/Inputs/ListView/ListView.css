@@ -4,6 +4,7 @@
     width: 100%;
     height: 30vh;
     flex-direction: column;
+    overflow-x: scroll;
 }
 
 .text-line {
